@@ -8,6 +8,9 @@ namespace ToastFish.Model.TimeControl
 {
     public class MyTaskScheduler
     {
+        
+        //TODO
+        //去掉换成kotlin识别触屏发送请求
         CommonBegin begin = CommonBegin.GetBegin();
         public static bool Timecontrol = false;
         private readonly Timer _timer;

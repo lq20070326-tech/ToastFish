@@ -44,6 +44,8 @@ namespace ToastFish
         {"Goin", "顺序五十音"},{"StdJp_Mid", "标准日本语中级词汇"} };
        // private NotifyIcon _notifyIcon = null;
        //HotKey _hotKey0, _hotKey1, _hotKey2, _hotKey3, _hotKey4;
+       //TODO
+       //主函数改成启动方法控制层调用初始化方法返回？
         public MainWindow()
         {
             Form_Load();
@@ -53,6 +55,16 @@ namespace ToastFish
             this.Visibility = Visibility.Hidden;
             Se.LoadGlobalConfig();
             ContextMenu();
+            //TODO
+            /*
+             * 变成推送单词控制层调用中断处理方法返回单词数据
+             * alt+q改成app_ui上开始背单词的请求
+             * alt+~放通知栏
+             * ALT+1选项1234请求
+             * ALT+2
+             * ALT+3
+             * ALT+4
+             */
             new HotKey(Key.Oem3, KeyModifier.Alt , OnHotKeyHandler);
             new HotKey(Key.D1, KeyModifier.Alt , OnHotKeyHandler);
             new HotKey(Key.D2, KeyModifier.Alt , OnHotKeyHandler);

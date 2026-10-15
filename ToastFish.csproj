@@ -150,8 +150,6 @@
     <Compile Include="Model\SM2plus\Card.cs" />
     <Compile Include="Model\SM2plus\Parameters.cs" />
     <Compile Include="Model\SqliteControl\Select.cs" />
-    <Compile Include="Model\StartWithWindows\HotKey.cs" />
-    <Compile Include="Model\StartWithWindows\StartWithWindows.cs" />
     <Compile Include="Model\TimeControl\MyTaskScheduler.cs">
       <DependentUpon>ToastFish.xaml</DependentUpon>
     </Compile>
@@ -223,6 +221,9 @@
     </PackageReference>
     <PackageReference Include="Dapper">
       <Version>2.0.90</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authorization">
+      <Version>11.0.0-rc.1.26425.128</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
       <Version>7.0.1</Version>

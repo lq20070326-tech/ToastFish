@@ -5,6 +5,17 @@ using System.Runtime.InteropServices;
 using System.Windows.Input;
 using System.Windows.Interop;
 
+
+/*TODO
+
+KOTLIN双层弹窗，1.通知栏 2.谈一个类似shizuku权限请求类弹窗
+
+2.其他数据请求控制层,加新数据接口保存，加数据获取接口
+
+*/
+
+
+
 namespace ToastFish.Model.StartWithWindows
 {
     public class HotKey : IDisposable
