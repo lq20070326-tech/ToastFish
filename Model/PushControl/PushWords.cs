@@ -341,8 +341,12 @@ namespace ToastFish.Model.PushControl
                     new ToastSelectionBoxItem("5", "5"),
                     new ToastSelectionBoxItem("10", "10"),
                     new ToastSelectionBoxItem("15", "15"),
-                    new ToastSelectionBoxItem("15", "20"),
-                    new ToastSelectionBoxItem("15", "25"),
+                    new ToastSelectionBoxItem("20", "20"),
+                    new ToastSelectionBoxItem("25", "25"),
+                    new ToastSelectionBoxItem("20", "20"),
+                    new ToastSelectionBoxItem("50", "50"),
+                    new ToastSelectionBoxItem("100", "100"),
+
 
                 }
             })

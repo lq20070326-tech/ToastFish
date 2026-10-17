@@ -53,6 +53,8 @@ namespace ToastFish
             this.Visibility = Visibility.Hidden;
             Se.LoadGlobalConfig();
             ContextMenu();
+            Begin_Click(null, null);
+            CommonBegin begin = CommonBegin.GetBegin();
             new HotKey(Key.Oem3, KeyModifier.Alt , OnHotKeyHandler);
             new HotKey(Key.D1, KeyModifier.Alt , OnHotKeyHandler);
             new HotKey(Key.D2, KeyModifier.Alt , OnHotKeyHandler);
@@ -73,11 +75,6 @@ namespace ToastFish
             switch (key) 
             {
                 case "Q":
-                    if (MyTaskScheduler.Timecontrol == false)
-                    {
-                        _scheduler.Start();
-                        MyTaskScheduler.Timecontrol = true;
-                    }
                     Begin_Click(null, null);
                     break;
                 case "D1":
@@ -355,6 +352,12 @@ namespace ToastFish
 
         private void Begin_Click(object sender, EventArgs e)
         {
+            
+            if (MyTaskScheduler.Timecontrol == false)
+            {
+                _scheduler.Start();
+                MyTaskScheduler.Timecontrol = true;
+            }
             if (!System.IO.Directory.Exists("Log"))  {
                 System.IO.Directory.CreateDirectory("Log");
             }
